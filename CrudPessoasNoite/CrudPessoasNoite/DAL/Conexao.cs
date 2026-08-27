@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Data.SqlClient;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -20,7 +21,45 @@ Data Source=DESKTOP-0BMMDJG\SQLEXPRESS;Initial Catalog=ds34p;User ID=sa;Password
 
 namespace CrudPessoasNoite.DAL
 {
-    internal class Conexao
+    public class Conexao
     {
+		public static SqlConnection con = new SqlConnection();
+		public static string mensagem;
+		public static string stringConexao =
+            @"Data Source=DESKTOP-0BMMDJG\SQLEXPRESS;
+			Initial Catalog=ds34p;User ID=sa;
+			Password=unip;Encrypt=False";
+		public static SqlConnection Conectar()
+		{
+			mensagem = "";
+			try
+			{
+				if (con.State == System.Data.ConnectionState.Closed)
+                {
+                    con.ConnectionString = stringConexao;
+                    con.Open();
+                }
+            }
+			catch (SqlException e)
+			{
+				mensagem = e.Message;
+			}
+			return con;
+		}
+
+		public static void Desconectar()
+		{
+            try
+            {
+                if (con.State == System.Data.ConnectionState.Open)
+                {
+                    con.Close();
+                }
+            }
+            catch (SqlException e)
+            {
+                mensagem = e.Message;
+            }
+        }
     }
 }

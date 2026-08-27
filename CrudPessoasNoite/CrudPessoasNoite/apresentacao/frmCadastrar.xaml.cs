@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CrudPessoasNoite.DAL;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -20,6 +21,7 @@ namespace CrudPessoasNoite.apresentacao
         public frmCadastrar()
         {
             InitializeComponent();
+            
         }
     }
 }
