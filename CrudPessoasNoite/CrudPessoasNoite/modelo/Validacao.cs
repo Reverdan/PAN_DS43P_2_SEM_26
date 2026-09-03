@@ -30,25 +30,25 @@ namespace CrudPessoasNoite.modelo
 
             if (string.IsNullOrWhiteSpace(listaDadosPessoa[1]))
             {
-                mensagem += "O nome é obrigatório. ";
+                mensagem += "O nome é obrigatório.\n";
             }
             else if (listaDadosPessoa[1].Length < 3)
             {
-                mensagem += "O nome deve ter no mínimo 3 caracteres. ";
+                mensagem += "O nome deve ter no mínimo 3 caracteres.\n";
             }
             else if (listaDadosPessoa[1].Length > 50)
             {
-                mensagem += "O nome deve ter no máximo 50 caracteres. ";
+                mensagem += "O nome deve ter no máximo 50 caracteres.\n";
             }
 
             if (!string.IsNullOrEmpty(listaDadosPessoa[2]) && listaDadosPessoa[2].Length > 11)
             {
-                mensagem += "O RG deve ter no máximo 11 caracteres. ";
+                mensagem += "O RG deve ter no máximo 11 caracteres.\n";
             }
 
             if (!string.IsNullOrEmpty(listaDadosPessoa[3]) && listaDadosPessoa[3].Length > 13)
             {
-                mensagem += "O CPF deve ter no máximo 13 caracteres. ";
+                mensagem += "O CPF deve ter no máximo 13 caracteres.\n";
             }
         }
     }

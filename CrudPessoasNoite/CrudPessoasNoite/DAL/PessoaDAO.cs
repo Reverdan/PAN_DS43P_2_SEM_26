@@ -24,6 +24,7 @@ namespace CrudPessoasNoite.DAL
                 comando.Parameters.AddWithValue("@cpf", pessoa.cpf);
 
                 comando.ExecuteNonQuery();
+                Conexao.mensagem = "Cadastro efetuado com sucesso!";
             }
             catch (SqlException ex)
             {

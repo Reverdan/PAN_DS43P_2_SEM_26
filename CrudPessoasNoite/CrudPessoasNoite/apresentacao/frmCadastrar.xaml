@@ -119,7 +119,7 @@
                     Content="Cadastrar" 
                     Style="{StaticResource ModernButton}" 
                     Margin="0,25,0,0"
-                    x:Name="btnCadastrar"/>
+                    x:Name="btnCadastrar" Click="btnCadastrar_Click"/>
         </Grid>
     </Border>
 </Window>
