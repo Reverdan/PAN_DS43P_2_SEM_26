@@ -21,5 +21,17 @@ namespace CrudPessoasNoite.apresentacao
         {
             InitializeComponent();
         }
+
+        private void mniCadastrar_Click(object sender, RoutedEventArgs e)
+        {
+            frmCadastrar frmC = new frmCadastrar();
+            frmC.ShowDialog();
+        }
+
+        private void mniPEE_Click(object sender, RoutedEventArgs e)
+        {
+            frmPEE frmPee = new frmPEE();
+            frmPee.ShowDialog();
+        }
     }
 }

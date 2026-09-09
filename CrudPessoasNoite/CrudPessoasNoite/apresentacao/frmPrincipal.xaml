@@ -173,11 +173,11 @@
 
                         <MenuItem x:Name="mniCadastrar"
                                   Header="Cadastrar"
-                                  Style="{StaticResource ModernSubMenuItem}"/>
+                                  Style="{StaticResource ModernSubMenuItem}" Click="mniCadastrar_Click"/>
 
                         <MenuItem x:Name="mniPEE"
                                   Header="Pesquisar, editar e excluir"
-                                  Style="{StaticResource ModernSubMenuItem}"/>
+                                  Style="{StaticResource ModernSubMenuItem}" Click="mniPEE_Click"/>
 
                     </MenuItem>
 
