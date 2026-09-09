@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{91126BA8-5CC9-D5EB-6C53-9E227CD13C4D}|CrudPessoasNoite\\CrudPessoasNoite.csproj|solutionrelative:crudpessoasnoite\\apresentacao\\frmprincipal.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{91126BA8-5CC9-D5EB-6C53-9E227CD13C4D}|CrudPessoasNoite\\CrudPessoasNoite.csproj|c:\\users\\rever\\documents\\github\\pan_ds43p_2_sem_26\\crudpessoasnoite\\crudpessoasnoite\\apresentacao\\frmcadastrar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{91126BA8-5CC9-D5EB-6C53-9E227CD13C4D}|CrudPessoasNoite\\CrudPessoasNoite.csproj|solutionrelative:crudpessoasnoite\\apresentacao\\frmcadastrar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{91126BA8-5CC9-D5EB-6C53-9E227CD13C4D}|CrudPessoasNoite\\CrudPessoasNoite.csproj|c:\\users\\rever\\documents\\github\\pan_ds43p_2_sem_26\\crudpessoasnoite\\crudpessoasnoite\\apresentacao\\frmprincipal.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91126BA8-5CC9-D5EB-6C53-9E227CD13C4D}|CrudPessoasNoite\\CrudPessoasNoite.csproj|solutionrelative:crudpessoasnoite\\apresentacao\\frmprincipal.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{91126BA8-5CC9-D5EB-6C53-9E227CD13C4D}|CrudPessoasNoite\\CrudPessoasNoite.csproj|c:\\users\\rever\\documents\\github\\pan_ds43p_2_sem_26\\crudpessoasnoite\\crudpessoasnoite\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{91126BA8-5CC9-D5EB-6C53-9E227CD13C4D}|CrudPessoasNoite\\CrudPessoasNoite.csproj|solutionrelative:crudpessoasnoite\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{91126BA8-5CC9-D5EB-6C53-9E227CD13C4D}|CrudPessoasNoite\\CrudPessoasNoite.csproj|c:\\users\\rever\\documents\\github\\pan_ds43p_2_sem_26\\crudpessoasnoite\\crudpessoasnoite\\apresentacao\\frmcadastrar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{91126BA8-5CC9-D5EB-6C53-9E227CD13C4D}|CrudPessoasNoite\\CrudPessoasNoite.csproj|solutionrelative:crudpessoasnoite\\apresentacao\\frmcadastrar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{91126BA8-5CC9-D5EB-6C53-9E227CD13C4D}|CrudPessoasNoite\\CrudPessoasNoite.csproj|c:\\users\\rever\\documents\\github\\pan_ds43p_2_sem_26\\crudpessoasnoite\\crudpessoasnoite\\apresentacao\\frmcadastrar.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,15 +42,15 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Conexao.cs",
-              "DocumentMoniker": "C:\\Users\\rever\\Documents\\github\\PAN_DS43P_2_SEM_26\\CrudPessoasNoite\\CrudPessoasNoite\\DAL\\Conexao.cs",
-              "RelativeDocumentMoniker": "CrudPessoasNoite\\DAL\\Conexao.cs",
-              "ToolTip": "C:\\Users\\rever\\Documents\\github\\PAN_DS43P_2_SEM_26\\CrudPessoasNoite\\CrudPessoasNoite\\DAL\\Conexao.cs",
-              "RelativeToolTip": "CrudPessoasNoite\\DAL\\Conexao.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAAAcAAAACAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "frmPrincipal.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\rever\\Documents\\github\\PAN_DS43P_2_SEM_26\\CrudPessoasNoite\\CrudPessoasNoite\\apresentacao\\frmPrincipal.xaml.cs",
+              "RelativeDocumentMoniker": "CrudPessoasNoite\\apresentacao\\frmPrincipal.xaml.cs",
+              "ToolTip": "C:\\Users\\rever\\Documents\\github\\PAN_DS43P_2_SEM_26\\CrudPessoasNoite\\CrudPessoasNoite\\apresentacao\\frmPrincipal.xaml.cs",
+              "RelativeToolTip": "CrudPessoasNoite\\apresentacao\\frmPrincipal.xaml.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAUwBkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-09T22:37:37.256Z",
+              "WhenOpened": "2026-09-09T23:26:23.385Z",
               "EditorCaption": ""
             },
             {
@@ -62,20 +62,20 @@
               "ToolTip": "C:\\Users\\rever\\Documents\\github\\PAN_DS43P_2_SEM_26\\CrudPessoasNoite\\CrudPessoasNoite\\apresentacao\\frmPrincipal.xaml",
               "RelativeToolTip": "CrudPessoasNoite\\apresentacao\\frmPrincipal.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-09-09T22:32:57.616Z",
+              "WhenOpened": "2026-09-09T23:26:18.854Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\rever\\Documents\\github\\PAN_DS43P_2_SEM_26\\CrudPessoasNoite\\CrudPessoasNoite\\App.xaml",
-              "RelativeDocumentMoniker": "CrudPessoasNoite\\App.xaml",
-              "ToolTip": "C:\\Users\\rever\\Documents\\github\\PAN_DS43P_2_SEM_26\\CrudPessoasNoite\\CrudPessoasNoite\\App.xaml",
-              "RelativeToolTip": "CrudPessoasNoite\\App.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-09-09T22:32:44.946Z",
-              "EditorCaption": ""
+              "DocumentIndex": 5,
+              "Title": "Conexao.cs",
+              "DocumentMoniker": "C:\\Users\\rever\\Documents\\github\\PAN_DS43P_2_SEM_26\\CrudPessoasNoite\\CrudPessoasNoite\\DAL\\Conexao.cs",
+              "RelativeDocumentMoniker": "CrudPessoasNoite\\DAL\\Conexao.cs",
+              "ToolTip": "C:\\Users\\rever\\Documents\\github\\PAN_DS43P_2_SEM_26\\CrudPessoasNoite\\CrudPessoasNoite\\DAL\\Conexao.cs",
+              "RelativeToolTip": "CrudPessoasNoite\\DAL\\Conexao.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAAcAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-09T22:37:37.256Z"
             },
             {
               "$type": "Document",
@@ -85,14 +85,14 @@
               "RelativeDocumentMoniker": "CrudPessoasNoite\\apresentacao\\frmCadastrar.xaml.cs",
               "ToolTip": "C:\\Users\\rever\\Documents\\github\\PAN_DS43P_2_SEM_26\\CrudPessoasNoite\\CrudPessoasNoite\\apresentacao\\frmCadastrar.xaml.cs",
               "RelativeToolTip": "CrudPessoasNoite\\apresentacao\\frmCadastrar.xaml.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAIwCIAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAowAsAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-03T00:17:32.342Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "frmCadastrar.xaml",
               "DocumentMoniker": "C:\\Users\\rever\\Documents\\github\\PAN_DS43P_2_SEM_26\\CrudPessoasNoite\\CrudPessoasNoite\\apresentacao\\frmCadastrar.xaml",
               "RelativeDocumentMoniker": "CrudPessoasNoite\\apresentacao\\frmCadastrar.xaml",
@@ -112,8 +112,7 @@
               "RelativeToolTip": "CrudPessoasNoite\\modelo\\Controle.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAAsAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-20T00:00:44.969Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-20T00:00:44.969Z"
             },
             {
               "$type": "Document",
@@ -125,8 +124,7 @@
               "RelativeToolTip": "CrudPessoasNoite\\DAL\\PessoaDAO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-19T23:59:45.59Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-19T23:59:45.59Z"
             }
           ]
         }
