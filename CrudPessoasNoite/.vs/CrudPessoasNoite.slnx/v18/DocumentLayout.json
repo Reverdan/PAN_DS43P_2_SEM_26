@@ -3,20 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\rever\\Documents\\github\\PAN_DS43P_2_SEM_26\\CrudPessoasNoite\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{91126BA8-5CC9-D5EB-6C53-9E227CD13C4D}|CrudPessoasNoite\\CrudPessoasNoite.csproj|c:\\users\\rever\\documents\\github\\pan_ds43p_2_sem_26\\crudpessoasnoite\\crudpessoasnoite\\apresentacao\\frmpee.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{91126BA8-5CC9-D5EB-6C53-9E227CD13C4D}|CrudPessoasNoite\\CrudPessoasNoite.csproj|solutionrelative:crudpessoasnoite\\apresentacao\\frmpee.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{91126BA8-5CC9-D5EB-6C53-9E227CD13C4D}|CrudPessoasNoite\\CrudPessoasNoite.csproj|c:\\users\\rever\\documents\\github\\pan_ds43p_2_sem_26\\crudpessoasnoite\\crudpessoasnoite\\dal\\pessoadao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91126BA8-5CC9-D5EB-6C53-9E227CD13C4D}|CrudPessoasNoite\\CrudPessoasNoite.csproj|solutionrelative:crudpessoasnoite\\dal\\pessoadao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{91126BA8-5CC9-D5EB-6C53-9E227CD13C4D}|CrudPessoasNoite\\CrudPessoasNoite.csproj|c:\\users\\rever\\documents\\github\\pan_ds43p_2_sem_26\\crudpessoasnoite\\crudpessoasnoite\\dal\\conexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{91126BA8-5CC9-D5EB-6C53-9E227CD13C4D}|CrudPessoasNoite\\CrudPessoasNoite.csproj|solutionrelative:crudpessoasnoite\\dal\\conexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{91126BA8-5CC9-D5EB-6C53-9E227CD13C4D}|CrudPessoasNoite\\CrudPessoasNoite.csproj|c:\\users\\rever\\documents\\github\\pan_ds43p_2_sem_26\\crudpessoasnoite\\crudpessoasnoite\\apresentacao\\frmpee.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91126BA8-5CC9-D5EB-6C53-9E227CD13C4D}|CrudPessoasNoite\\CrudPessoasNoite.csproj|solutionrelative:crudpessoasnoite\\apresentacao\\frmpee.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{91126BA8-5CC9-D5EB-6C53-9E227CD13C4D}|CrudPessoasNoite\\CrudPessoasNoite.csproj|c:\\users\\rever\\documents\\github\\pan_ds43p_2_sem_26\\crudpessoasnoite\\crudpessoasnoite\\modelo\\controle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{91126BA8-5CC9-D5EB-6C53-9E227CD13C4D}|CrudPessoasNoite\\CrudPessoasNoite.csproj|solutionrelative:crudpessoasnoite\\modelo\\controle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{91126BA8-5CC9-D5EB-6C53-9E227CD13C4D}|CrudPessoasNoite\\CrudPessoasNoite.csproj|c:\\users\\rever\\documents\\github\\pan_ds43p_2_sem_26\\crudpessoasnoite\\crudpessoasnoite\\dal\\pessoadao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{91126BA8-5CC9-D5EB-6C53-9E227CD13C4D}|CrudPessoasNoite\\CrudPessoasNoite.csproj|solutionrelative:crudpessoasnoite\\dal\\pessoadao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{91126BA8-5CC9-D5EB-6C53-9E227CD13C4D}|CrudPessoasNoite\\CrudPessoasNoite.csproj|c:\\users\\rever\\documents\\github\\pan_ds43p_2_sem_26\\crudpessoasnoite\\crudpessoasnoite\\apresentacao\\frmpee.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{91126BA8-5CC9-D5EB-6C53-9E227CD13C4D}|CrudPessoasNoite\\CrudPessoasNoite.csproj|solutionrelative:crudpessoasnoite\\apresentacao\\frmpee.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91126BA8-5CC9-D5EB-6C53-9E227CD13C4D}|CrudPessoasNoite\\CrudPessoasNoite.csproj|c:\\users\\rever\\documents\\github\\pan_ds43p_2_sem_26\\crudpessoasnoite\\crudpessoasnoite\\apresentacao\\frmcadastrar.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91126BA8-5CC9-D5EB-6C53-9E227CD13C4D}|CrudPessoasNoite\\CrudPessoasNoite.csproj|solutionrelative:crudpessoasnoite\\apresentacao\\frmcadastrar.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91126BA8-5CC9-D5EB-6C53-9E227CD13C4D}|CrudPessoasNoite\\CrudPessoasNoite.csproj|c:\\users\\rever\\documents\\github\\pan_ds43p_2_sem_26\\crudpessoasnoite\\crudpessoasnoite\\modelo\\validacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91126BA8-5CC9-D5EB-6C53-9E227CD13C4D}|CrudPessoasNoite\\CrudPessoasNoite.csproj|solutionrelative:crudpessoasnoite\\modelo\\validacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91126BA8-5CC9-D5EB-6C53-9E227CD13C4D}|CrudPessoasNoite\\CrudPessoasNoite.csproj|c:\\users\\rever\\documents\\github\\pan_ds43p_2_sem_26\\crudpessoasnoite\\crudpessoasnoite\\dal\\conexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91126BA8-5CC9-D5EB-6C53-9E227CD13C4D}|CrudPessoasNoite\\CrudPessoasNoite.csproj|solutionrelative:crudpessoasnoite\\dal\\conexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,11 +38,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
+              "Title": "Validacao.cs",
+              "DocumentMoniker": "C:\\Users\\rever\\Documents\\github\\PAN_DS43P_2_SEM_26\\CrudPessoasNoite\\CrudPessoasNoite\\modelo\\Validacao.cs",
+              "RelativeDocumentMoniker": "CrudPessoasNoite\\modelo\\Validacao.cs",
+              "ToolTip": "C:\\Users\\rever\\Documents\\github\\PAN_DS43P_2_SEM_26\\CrudPessoasNoite\\CrudPessoasNoite\\modelo\\Validacao.cs",
+              "RelativeToolTip": "CrudPessoasNoite\\modelo\\Validacao.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAA8wBQAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-10T00:17:07.436Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmPEE.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\rever\\Documents\\github\\PAN_DS43P_2_SEM_26\\CrudPessoasNoite\\CrudPessoasNoite\\apresentacao\\frmPEE.xaml.cs",
+              "RelativeDocumentMoniker": "CrudPessoasNoite\\apresentacao\\frmPEE.xaml.cs",
+              "ToolTip": "C:\\Users\\rever\\Documents\\github\\PAN_DS43P_2_SEM_26\\CrudPessoasNoite\\CrudPessoasNoite\\apresentacao\\frmPEE.xaml.cs",
+              "RelativeToolTip": "CrudPessoasNoite\\apresentacao\\frmPEE.xaml.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAwD8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-10T00:00:41.947Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "frmPEE.xaml",
               "DocumentMoniker": "C:\\Users\\rever\\Documents\\github\\PAN_DS43P_2_SEM_26\\CrudPessoasNoite\\CrudPessoasNoite\\apresentacao\\frmPEE.xaml",
               "RelativeDocumentMoniker": "CrudPessoasNoite\\apresentacao\\frmPEE.xaml",
@@ -42,7 +80,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "Conexao.cs",
               "DocumentMoniker": "C:\\Users\\rever\\Documents\\github\\PAN_DS43P_2_SEM_26\\CrudPessoasNoite\\CrudPessoasNoite\\DAL\\Conexao.cs",
               "RelativeDocumentMoniker": "CrudPessoasNoite\\DAL\\Conexao.cs",
@@ -61,21 +99,36 @@
               "RelativeDocumentMoniker": "CrudPessoasNoite\\modelo\\Controle.cs",
               "ToolTip": "C:\\Users\\rever\\Documents\\github\\PAN_DS43P_2_SEM_26\\CrudPessoasNoite\\CrudPessoasNoite\\modelo\\Controle.cs",
               "RelativeToolTip": "CrudPessoasNoite\\modelo\\Controle.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAsAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwDsAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-20T00:00:44.969Z"
+              "WhenOpened": "2026-08-20T00:00:44.969Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "PessoaDAO.cs",
               "DocumentMoniker": "C:\\Users\\rever\\Documents\\github\\PAN_DS43P_2_SEM_26\\CrudPessoasNoite\\CrudPessoasNoite\\DAL\\PessoaDAO.cs",
               "RelativeDocumentMoniker": "CrudPessoasNoite\\DAL\\PessoaDAO.cs",
               "ToolTip": "C:\\Users\\rever\\Documents\\github\\PAN_DS43P_2_SEM_26\\CrudPessoasNoite\\CrudPessoasNoite\\DAL\\PessoaDAO.cs",
               "RelativeToolTip": "CrudPessoasNoite\\DAL\\PessoaDAO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAHwAAAAAAAAAAAAnwIcAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-19T23:59:45.59Z"
+              "WhenOpened": "2026-08-19T23:59:45.59Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "frmCadastrar.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\rever\\Documents\\github\\PAN_DS43P_2_SEM_26\\CrudPessoasNoite\\CrudPessoasNoite\\apresentacao\\frmCadastrar.xaml.cs",
+              "RelativeDocumentMoniker": "CrudPessoasNoite\\apresentacao\\frmCadastrar.xaml.cs",
+              "ToolTip": "C:\\Users\\rever\\Documents\\github\\PAN_DS43P_2_SEM_26\\CrudPessoasNoite\\CrudPessoasNoite\\apresentacao\\frmCadastrar.xaml.cs",
+              "RelativeToolTip": "CrudPessoasNoite\\apresentacao\\frmCadastrar.xaml.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwCgAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-10T00:24:56.329Z",
+              "EditorCaption": ""
             }
           ]
         }

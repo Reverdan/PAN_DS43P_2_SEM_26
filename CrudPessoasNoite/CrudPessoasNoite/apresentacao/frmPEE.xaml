@@ -200,7 +200,7 @@
                             Content="Pesquisar"
                             Height="42"
                             Margin="12,0,0,0"
-                            Style="{StaticResource ModernButton}"/>
+                            Style="{StaticResource ModernButton}" Click="btnPesquisarId_Click"/>
 
                 </Grid>
 
@@ -299,7 +299,7 @@
                         Content="Excluir"
                         Width="120"
                         HorizontalAlignment="Left"
-                        Style="{StaticResource DeleteButton}"/>
+                        Style="{StaticResource DeleteButton}" Click="btnExcluir_Click"/>
 
 
                 <!-- EDITAR - TOTALMENTE À DIREITA -->
@@ -308,7 +308,7 @@
                         Content="Editar"
                         Width="120"
                         HorizontalAlignment="Right"
-                        Style="{StaticResource ModernButton}"/>
+                        Style="{StaticResource ModernButton}" Click="btnEditar_Click"/>
 
             </Grid>
 

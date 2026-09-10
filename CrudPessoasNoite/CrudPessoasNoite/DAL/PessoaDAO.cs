@@ -58,6 +58,11 @@ namespace CrudPessoasNoite.DAL
                     pessoa.nome = reader["nome"].ToString();
                     pessoa.rg = reader["rg"].ToString();
                     pessoa.cpf = reader["cpf"].ToString();
+                    Conexao.mensagem = "Pesquisa feita com sucesso";
+                }
+                else
+                {
+                    Conexao.mensagem = "Não existe este ID no BD";
                 }
 
                 reader.Close();
@@ -94,6 +99,7 @@ namespace CrudPessoasNoite.DAL
                 comando.Parameters.AddWithValue("@cpf", pessoa.cpf);
 
                 comando.ExecuteNonQuery();
+                Conexao.mensagem = "Pessoa editada";
             }
             catch (SqlException ex)
             {
@@ -109,8 +115,48 @@ namespace CrudPessoasNoite.DAL
             }
         }
 
+        public int contarRegistros(int id)
+        {
+            int contagem = 0;
+            try
+            {
+                Conexao.Conectar();
+
+                string comandoSql = "SELECT count(*) as total FROM Pessoas WHERE id = @id";
+                SqlCommand comando = new SqlCommand(comandoSql, Conexao.con);
+                comando.Parameters.AddWithValue("@id", id);
+
+                SqlDataReader reader = comando.ExecuteReader();
+
+                if (reader.Read())
+                {
+                    contagem = Convert.ToInt32(reader["total"]);
+                }
+                reader.Close();
+            }
+            catch (SqlException ex)
+            {
+                Conexao.mensagem = "Erro de banco de dados ao pesquisar pessoa: " + ex.Message;
+            }
+            catch (Exception ex)
+            {
+                Conexao.mensagem = "Erro inesperado ao pesquisar pessoa: " + ex.Message;
+            }
+            finally
+            {
+                Conexao.Desconectar();
+            }
+
+            return contagem;
+        }
+
         public void excluirPessoa(Pessoa pessoa)
         {
+            if (contarRegistros(pessoa.id) != 1)
+            {
+                Conexao.mensagem = "Não existe este ID para excluir";
+                return;
+            }
             try
             {
                 Conexao.Conectar();
@@ -122,6 +168,8 @@ namespace CrudPessoasNoite.DAL
                 comando.Parameters.AddWithValue("@id", pessoa.id);
 
                 comando.ExecuteNonQuery();
+
+                Conexao.mensagem = "Pessoa Excluida";
             }
             catch (SqlException ex)
             {

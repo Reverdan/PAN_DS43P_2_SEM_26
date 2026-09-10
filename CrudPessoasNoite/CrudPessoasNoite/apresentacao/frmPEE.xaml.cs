@@ -9,6 +9,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using CrudPessoasNoite.modelo;
 
 namespace CrudPessoasNoite.apresentacao
 {
@@ -20,6 +21,45 @@ namespace CrudPessoasNoite.apresentacao
         public frmPEE()
         {
             InitializeComponent();
+        }
+
+        private void btnPesquisarId_Click(object sender, RoutedEventArgs e)
+        {
+            Controle controle = new Controle();
+            Pessoa pessoa = controle.PesquisarPessoaPorId(txbId.Text);
+            if (pessoa == null)
+            {
+                MessageBox.Show(controle.mensagem);
+                return;
+            }
+            txbNome.Text = pessoa.nome;
+            txbRg.Text = pessoa.rg;
+            txbCpf.Text = pessoa.cpf;
+
+            MessageBox.Show(controle.mensagem);
+        }
+
+        private void btnEditar_Click(object sender, RoutedEventArgs e)
+        {
+            Controle controle = new Controle();
+
+            List<String> listaDadosPessoa = new List<string>();
+
+            listaDadosPessoa.Add(txbId.Text);
+            listaDadosPessoa.Add(txbNome.Text);
+            listaDadosPessoa.Add(txbRg.Text);
+            listaDadosPessoa.Add(txbCpf.Text);
+
+            controle.EditarPessoa(listaDadosPessoa);
+
+            MessageBox.Show(controle.mensagem);
+        }
+
+        private void btnExcluir_Click(object sender, RoutedEventArgs e)
+        {
+            Controle controle = new Controle();
+            controle.ExcluirPessoa(txbId.Text);
+            MessageBox.Show(controle.mensagem);
         }
     }
 }

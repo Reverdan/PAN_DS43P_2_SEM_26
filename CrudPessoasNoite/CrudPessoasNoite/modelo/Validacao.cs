@@ -18,7 +18,7 @@ namespace CrudPessoasNoite.modelo
             }
             catch (Exception ex)
             {
-                mensagem = ex.Message;
+                mensagem = "ID inválido";
             }
         }
 
