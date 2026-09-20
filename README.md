@@ -1,4 +1,4 @@
-# PAN_DS43A_2_SEM_26
+# PAN_DS43P_2_SEM_26
 
 Este repositório contém projetos da disciplina com exemplos de CRUD em WPF e SQL Server.
 
