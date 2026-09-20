@@ -17,6 +17,7 @@ create table Pessoas
 )
 
 Data Source=DESKTOP-0BMMDJG\SQLEXPRESS;Initial Catalog=ds34a;User ID=sa;Password=***********;Encrypt=False
+Data Source=REVER-NOTE\SQLEXPRESS;Initial Catalog=ds34a;User ID=sa;Password=***********;Encrypt=False
 
 */
 
@@ -27,10 +28,14 @@ namespace CRUDPessoas.DAL
     {
         public static SqlConnection con = new SqlConnection();
         public static string mensagem = "";
+        //public static string stringConexao =
+        //    @"Data Source=DESKTOP-0BMMDJG\SQLEXPRESS;
+        //    Initial Catalog=ds34a;User ID=sa;
+        //    Password=unip;Encrypt=False";
         public static string stringConexao =
-            @"Data Source=DESKTOP-0BMMDJG\SQLEXPRESS;
-            Initial Catalog=ds34p;User ID=sa;
-            Password=unip;Encrypt=False";
+            @"Data Source=REVER-NOTE\SQLEXPRESS;
+            Initial Catalog=ds34a;User ID=sa;
+            Password=rever;Encrypt=False";
 
         public static SqlConnection Conectar()
         {

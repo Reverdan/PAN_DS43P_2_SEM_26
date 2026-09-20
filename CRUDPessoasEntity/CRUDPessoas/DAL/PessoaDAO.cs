@@ -14,7 +14,7 @@ namespace CRUDPessoas.DAL
         {
             try
             {
-                ConexaoEntity contexto = new ConexaoEntity();
+                AppDbContext contexto = new AppDbContext();
                 contexto.Pessoas.Add(pessoa);
                 contexto.SaveChanges();
                 Conexao.mensagem = "Pessoa cadastrada com sucesso.";
@@ -23,7 +23,7 @@ namespace CRUDPessoas.DAL
             {
                 Conexao.mensagem = "Erro ao cadastrar pessoa: " + ex.Message;
             }
-            
+
         }
 
         //public void CadastrarPessoa(Pessoa pessoa)
@@ -34,26 +34,26 @@ namespace CRUDPessoas.DAL
         //        string comandoSql = "INSERT INTO Pessoas (nome, rg, cpf) " +
         //            "VALUES (@nome, @rg, @cpf)";
 
-        //        using (SqlCommand comando = new SqlCommand(comandoSql, conexao))
-        //        {
-        //            comando.Parameters.AddWithValue("@nome", pessoa.nome);
-        //            comando.Parameters.AddWithValue("@rg", pessoa.rg);
-        //            comando.Parameters.AddWithValue("@cpf", pessoa.cpf);
+            //        using (SqlCommand comando = new SqlCommand(comandoSql, conexao))
+            //        {
+            //            comando.Parameters.AddWithValue("@nome", pessoa.nome);
+            //            comando.Parameters.AddWithValue("@rg", pessoa.rg);
+            //            comando.Parameters.AddWithValue("@cpf", pessoa.cpf);
 
-        //            comando.ExecuteNonQuery();
-        //        }
+            //            comando.ExecuteNonQuery();
+            //        }
 
-        //        Conexao.mensagem = "Pessoa cadastrada com sucesso.";
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        Conexao.mensagem = "Erro ao cadastrar pessoa: " + ex.Message;
-        //    }
-        //    finally
-        //    {
-        //        Conexao.Desconectar();
-        //    }
-        //}
+            //        Conexao.mensagem = "Pessoa cadastrada com sucesso.";
+            //    }
+            //    catch (Exception ex)
+            //    {
+            //        Conexao.mensagem = "Erro ao cadastrar pessoa: " + ex.Message;
+            //    }
+            //    finally
+            //    {
+            //        Conexao.Desconectar();
+            //    }
+            //}
 
         public Pessoa PesquisarPessoaPorId(Pessoa pessoa)
         {
