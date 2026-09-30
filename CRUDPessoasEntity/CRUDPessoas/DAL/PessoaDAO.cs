@@ -12,16 +12,17 @@ namespace CRUDPessoas.DAL
 
         public void CadastrarPessoa(Pessoa pessoa)
         {
+            this.mensagem = "";
             try
             {
                 AppDbContext contexto = new AppDbContext();
                 contexto.Pessoas.Add(pessoa);
                 contexto.SaveChanges();
-                Conexao.mensagem = "Pessoa cadastrada com sucesso.";
+                this.mensagem = "Pessoa cadastrada com sucesso.";
             }
             catch (Exception ex)
             {
-                Conexao.mensagem = "Erro ao cadastrar pessoa: " + ex.Message;
+                this.mensagem = "Erro ao cadastrar pessoa: " + ex.Message;
             }
 
         }
@@ -57,6 +58,7 @@ namespace CRUDPessoas.DAL
 
         public Pessoa PesquisarPessoaPorId(Pessoa pessoa)
         {
+            this.mensagem = "";
             try
             {
                 SqlConnection conexao = Conexao.Conectar();
@@ -78,7 +80,7 @@ namespace CRUDPessoas.DAL
                         }
                         else
                         {
-                            Conexao.mensagem = "Não existe pessoa com este ID";
+                            this.mensagem = "Não existe pessoa com este ID";
                         }
                     }
                 }
@@ -86,7 +88,7 @@ namespace CRUDPessoas.DAL
             }
             catch (Exception ex)
             {
-                Conexao.mensagem = "Erro ao pesquisar pessoa: " + ex.Message;
+                this.mensagem = "Erro ao pesquisar pessoa: " + ex.Message;
             }
             finally
             {
@@ -97,6 +99,7 @@ namespace CRUDPessoas.DAL
 
         public void EditarPessoa(Pessoa pessoa)
         {
+            this.mensagem = "";
             try
             {
                 SqlConnection conexao = Conexao.Conectar();
@@ -112,11 +115,11 @@ namespace CRUDPessoas.DAL
                     comando.ExecuteNonQuery();
                 }
 
-                Conexao.mensagem = "Pessoa editada com sucesso.";
+                this.mensagem = "Pessoa editada com sucesso.";
             }
             catch (Exception ex)
             {
-                Conexao.mensagem = "Erro ao editar pessoa: " + ex.Message;
+                this.mensagem = "Erro ao editar pessoa: " + ex.Message;
             }
             finally
             {
@@ -126,6 +129,7 @@ namespace CRUDPessoas.DAL
 
         public int contarRegistros(int id)
         {
+            this.mensagem = "";
             int contagem = 0;
             try
             {
@@ -148,7 +152,7 @@ namespace CRUDPessoas.DAL
             }
             catch (Exception ex)
             {
-                Conexao.mensagem = "Erro ao contar pessoa: " + ex.Message;
+                this.mensagem = "Erro ao contar pessoa: " + ex.Message;
             }
             finally
             {
@@ -159,9 +163,10 @@ namespace CRUDPessoas.DAL
 
         public void ExcluirPessoa(Pessoa pessoa)
         {
+            this.mensagem = "";
             if (contarRegistros(pessoa.id) != 1)
             {
-                Conexao.mensagem = "Não existe este ID.";
+                this.mensagem = "Não existe este ID.";
                 return;
             }
 
@@ -177,11 +182,11 @@ namespace CRUDPessoas.DAL
                     comando.ExecuteNonQuery();
                 }
 
-                Conexao.mensagem = "Pessoa excluída com sucesso.";
+                this.mensagem = "Pessoa excluída com sucesso.";
             }
             catch (Exception ex)
             {
-                Conexao.mensagem = "Erro ao excluir pessoa: " + ex.Message;
+                this.mensagem = "Erro ao excluir pessoa: " + ex.Message;
             }
             finally
             {
@@ -191,6 +196,7 @@ namespace CRUDPessoas.DAL
 
         public List<Pessoa> PesquisarPessoaPorNome(Pessoa pessoa)
         {
+            this.mensagem = "";
             List<Pessoa> listaPessoas = new List<Pessoa>();
             try
             {
@@ -216,11 +222,11 @@ namespace CRUDPessoas.DAL
                         }
                     }
                 }
-                Conexao.mensagem = "Pesquisa realizada com sucesso.";
+                this.mensagem = "Pesquisa realizada com sucesso.";
             }
             catch (Exception ex)
             {
-                Conexao.mensagem = "Erro ao pesquisar pessoa: " + ex.Message;
+                this.mensagem = "Erro ao pesquisar pessoa: " + ex.Message;
             }
             finally
             {

@@ -6,7 +6,7 @@ using System.Text;
 /*
 create database ds34a
 go
-use ds34a
+use ds34p
 go
 create table Pessoas
 (
@@ -28,14 +28,11 @@ namespace CRUDPessoas.DAL
     {
         public static SqlConnection con = new SqlConnection();
         public static string mensagem = "";
-        //public static string stringConexao =
-        //    @"Data Source=DESKTOP-0BMMDJG\SQLEXPRESS;
-        //    Initial Catalog=ds34a;User ID=sa;
-        //    Password=unip;Encrypt=False";
+
         public static string stringConexao =
-            @"Data Source=REVER-NOTE\SQLEXPRESS;
-            Initial Catalog=ds34a;User ID=sa;
-            Password=rever;Encrypt=False";
+            @"Data Source=DESKTOP-0BMMDJG\SQLEXPRESS;
+            Initial Catalog=ds34p;User ID=sa;
+            Password=unip;Encrypt=False";
 
         public static SqlConnection Conectar()
         {

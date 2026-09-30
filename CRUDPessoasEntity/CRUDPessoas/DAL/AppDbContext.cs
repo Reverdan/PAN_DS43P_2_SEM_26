@@ -27,9 +27,9 @@ namespace CRUDPessoas.DAL
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             base.OnConfiguring(optionsBuilder);
-            optionsBuilder.UseSqlServer(@"Data Source=REVER-NOTE\SQLEXPRESS;
-            Initial Catalog=ds34a;User ID=sa;
-            Password=rever;Encrypt=False");
+            optionsBuilder.UseSqlServer(@"Data Source=DESKTOP-0BMMDJG\SQLEXPRESS;
+            Initial Catalog=ds34p;User ID=sa;
+            Password=unip;Encrypt=False");
         }
     }
 }

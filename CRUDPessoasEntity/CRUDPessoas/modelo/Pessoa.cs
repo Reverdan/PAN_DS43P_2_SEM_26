@@ -11,7 +11,5 @@ namespace CRUDPessoas.modelo
         public string rg { get; set; }
         public string cpf { get; set; }
 
-        public string email { get; set; }
-
     }
 }
