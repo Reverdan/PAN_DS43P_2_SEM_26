@@ -31,7 +31,7 @@ namespace CRUDPessoas.modelo
                 PessoaDAO dao = new PessoaDAO();
                 dao.CadastrarPessoa(pessoa);
 
-                this.mensagem = Conexao.mensagem;
+                this.mensagem = dao.mensagem;
             }
         }
 
@@ -52,7 +52,7 @@ namespace CRUDPessoas.modelo
             PessoaDAO dao = new PessoaDAO();
             Pessoa pessoaRetorno = dao.PesquisarPessoaPorId(pessoa);
 
-            this.mensagem = Conexao.mensagem;
+            this.mensagem = dao.mensagem;
 
             return pessoaRetorno;
         }
@@ -77,7 +77,7 @@ namespace CRUDPessoas.modelo
                 PessoaDAO dao = new PessoaDAO();
                 dao.EditarPessoa(pessoa);
 
-                this.mensagem = Conexao.mensagem;
+                this.mensagem = dao.mensagem;
             }
         }
 
@@ -98,7 +98,7 @@ namespace CRUDPessoas.modelo
                 PessoaDAO dao = new PessoaDAO();
                 dao.ExcluirPessoa(pessoa);
 
-                this.mensagem = Conexao.mensagem;
+                this.mensagem = dao.mensagem;
             }
         }
 
@@ -121,7 +121,7 @@ namespace CRUDPessoas.modelo
             PessoaDAO dao = new PessoaDAO();
             List<Pessoa> listaPessoas = dao.PesquisarPessoaPorNome(pessoa);
 
-            this.mensagem = Conexao.mensagem;
+            this.mensagem = dao.mensagem;
 
             return listaPessoas;
         }

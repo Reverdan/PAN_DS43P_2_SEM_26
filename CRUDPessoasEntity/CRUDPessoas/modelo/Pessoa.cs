@@ -19,9 +19,5 @@ namespace CRUDPessoas.modelo
 
         [MaxLength(13)]
         public string cpf { get; set; }
-
-        [MaxLength(50)]
-        public string email { get; set; }
-
     }
 }

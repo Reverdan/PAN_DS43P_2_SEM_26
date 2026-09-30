@@ -14,7 +14,7 @@ namespace CRUDPessoas.DAL
         {
             base.OnConfiguring(optionsBuilder);
             optionsBuilder.UseSqlServer(@"Data Source=DESKTOP-0BMMDJG\SQLEXPRESS;
-            Initial Catalog=ds34p;User ID=sa;
+            Initial Catalog=ds34a;User ID=sa;
             Password=unip;Encrypt=False");
         }
     }
