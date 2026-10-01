@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 /*
-create database ds34a
+create database ds34p
 go
 use ds34p
 go

@@ -27,72 +27,19 @@ namespace CRUDPessoas.DAL
 
         }
 
-        //public void CadastrarPessoa(Pessoa pessoa)
-        //{
-        //    try
-        //    {
-        //        SqlConnection conexao = Conexao.Conectar();
-        //        string comandoSql = "INSERT INTO Pessoas (nome, rg, cpf) " +
-        //            "VALUES (@nome, @rg, @cpf)";
-
-            //        using (SqlCommand comando = new SqlCommand(comandoSql, conexao))
-            //        {
-            //            comando.Parameters.AddWithValue("@nome", pessoa.nome);
-            //            comando.Parameters.AddWithValue("@rg", pessoa.rg);
-            //            comando.Parameters.AddWithValue("@cpf", pessoa.cpf);
-
-            //            comando.ExecuteNonQuery();
-            //        }
-
-            //        Conexao.mensagem = "Pessoa cadastrada com sucesso.";
-            //    }
-            //    catch (Exception ex)
-            //    {
-            //        Conexao.mensagem = "Erro ao cadastrar pessoa: " + ex.Message;
-            //    }
-            //    finally
-            //    {
-            //        Conexao.Desconectar();
-            //    }
-            //}
-
         public Pessoa PesquisarPessoaPorId(Pessoa pessoa)
         {
             this.mensagem = "";
             try
             {
-                SqlConnection conexao = Conexao.Conectar();
-                string comandoSql = "SELECT id, nome, rg, cpf FROM Pessoas WHERE id = @id";
-
-                using (SqlCommand comando = new SqlCommand(comandoSql, conexao))
-                {
-                    comando.Parameters.AddWithValue("@id", pessoa.id);
-
-                    using (SqlDataReader leitor = comando.ExecuteReader())
-                    {
-                        if (leitor.Read())
-                        {
-                            pessoa.id = Convert.ToInt32(leitor["id"]);
-                            pessoa.nome = leitor["nome"].ToString();
-                            pessoa.rg = leitor["rg"].ToString();
-                            pessoa.cpf = leitor["cpf"].ToString();
-                            //Conexao.mensagem = "Pesquisa realizada com sucesso.";
-                        }
-                        else
-                        {
-                            this.mensagem = "Não existe pessoa com este ID";
-                        }
-                    }
-                }
-                
+                AppDbContext contexto = new AppDbContext();
+                pessoa = contexto.Pessoas.Find(pessoa.id);
+                if (pessoa == null)
+                    this.mensagem = "Não existe este ID";
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
-                this.mensagem = "Erro ao pesquisar pessoa: " + ex.Message;
-            }
-            finally
-            {
-                Conexao.Desconectar();
+                this.mensagem = "Erro de BD";
             }
             return pessoa;
         }
@@ -102,95 +49,30 @@ namespace CRUDPessoas.DAL
             this.mensagem = "";
             try
             {
-                SqlConnection conexao = Conexao.Conectar();
-                string comandoSql = "UPDATE Pessoas SET nome = @nome, rg = @rg, cpf = @cpf WHERE id = @id";
-
-                using (SqlCommand comando = new SqlCommand(comandoSql, conexao))
-                {
-                    comando.Parameters.AddWithValue("@id", pessoa.id);
-                    comando.Parameters.AddWithValue("@nome", pessoa.nome);
-                    comando.Parameters.AddWithValue("@rg", pessoa.rg);
-                    comando.Parameters.AddWithValue("@cpf", pessoa.cpf);
-
-                    comando.ExecuteNonQuery();
-                }
-
-                this.mensagem = "Pessoa editada com sucesso.";
+                AppDbContext contexto = new AppDbContext();
+                contexto.Entry(pessoa).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+                contexto.SaveChanges();
+                this.mensagem = "Pessoa editada";
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
-                this.mensagem = "Erro ao editar pessoa: " + ex.Message;
+                this.mensagem = "Erro de BD";
             }
-            finally
-            {
-                Conexao.Desconectar();
-            }
-        }
-
-        public int contarRegistros(int id)
-        {
-            this.mensagem = "";
-            int contagem = 0;
-            try
-            {
-                SqlConnection conexao = Conexao.Conectar();
-                string comandoSql = "select COUNT(*) as total FROM Pessoas WHERE id = @id";
-                using (SqlCommand comando = new SqlCommand(comandoSql, conexao))
-                {
-                    comando.Parameters.AddWithValue("@id", id);
-
-                    using (SqlDataReader leitor = comando.ExecuteReader())
-                    {
-                        if (leitor.Read())
-                        {
-                            contagem = Convert.ToInt32(leitor["total"]);
-                        }
-
-                    }
-                }
-
-            }
-            catch (Exception ex)
-            {
-                this.mensagem = "Erro ao contar pessoa: " + ex.Message;
-            }
-            finally
-            {
-                Conexao.Desconectar();
-            }
-            return contagem;
         }
 
         public void ExcluirPessoa(Pessoa pessoa)
         {
             this.mensagem = "";
-            if (contarRegistros(pessoa.id) != 1)
-            {
-                this.mensagem = "Não existe este ID.";
-                return;
-            }
-
             try
             {
-                SqlConnection conexao = Conexao.Conectar();
-                string comandoSql = "DELETE FROM Pessoas WHERE id = @id";
-
-                using (SqlCommand comando = new SqlCommand(comandoSql, conexao))
-                {
-                    comando.Parameters.AddWithValue("@id", pessoa.id);
-
-                    comando.ExecuteNonQuery();
-                }
-
-                this.mensagem = "Pessoa excluída com sucesso.";
+                AppDbContext contexto = new AppDbContext();
+                contexto.Remove(pessoa);
+                contexto.SaveChanges();
+                this.mensagem = "Pessoa excluida";
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
-                this.mensagem = "Erro ao excluir pessoa: " + ex.Message;
-            }
-            finally
-            {
-                Conexao.Desconectar();
+                this.mensagem = "Erro de BD";
             }
         }
 
@@ -200,37 +82,15 @@ namespace CRUDPessoas.DAL
             List<Pessoa> listaPessoas = new List<Pessoa>();
             try
             {
-                SqlConnection conexao = Conexao.Conectar();
-                string comandoSql = "SELECT id, nome, rg, cpf FROM Pessoas WHERE nome LIKE @nome";
-
-                using (SqlCommand comando = new SqlCommand(comandoSql, conexao))
-                {
-                    comando.Parameters.AddWithValue("@nome", "%" + pessoa.nome + "%");
-
-                    using (SqlDataReader leitor = comando.ExecuteReader())
-                    {
-                        while (leitor.Read())
-                        {
-                            Pessoa p = new Pessoa();
-
-                            p.id = Convert.ToInt32(leitor["id"]);
-                            p.nome = leitor["nome"].ToString();
-                            p.rg = leitor["rg"].ToString();
-                            p.cpf = leitor["cpf"].ToString();
-                            
-                            listaPessoas.Add(p);
-                        }
-                    }
-                }
-                this.mensagem = "Pesquisa realizada com sucesso.";
+                AppDbContext contexto = new AppDbContext();
+                listaPessoas = contexto.Pessoas
+                    .Where(p => p.nome.Contains(pessoa.nome))
+                    .OrderBy(p => p.nome)
+                    .ToList();
             }
             catch (Exception ex)
             {
-                this.mensagem = "Erro ao pesquisar pessoa: " + ex.Message;
-            }
-            finally
-            {
-                Conexao.Desconectar();
+                this.mensagem = "Erro de BD";
             }
             return listaPessoas;
         }
