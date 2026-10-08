@@ -73,14 +73,12 @@ namespace CRUDPessoas.apresentacao
         private void btnEditar_Click(object sender, RoutedEventArgs e)
         {
             Controle controle = new Controle();
-            var dados = new Dictionary<string, string>
-            {
-                ["id"] = txbId.Text,
-                ["nome"] = txbNome.Text,
-                ["rg"] = txbRg.Text,
-                ["cpf"] = txbCpf.Text
-            };
-            controle.EditarPessoa(dados);
+            List<String> listaDadosPessoa = new List<string>();
+            listaDadosPessoa.Add(txbId.Text);
+            listaDadosPessoa.Add(txbNome.Text);
+            listaDadosPessoa.Add(txbRg.Text);
+            listaDadosPessoa.Add(txbCpf.Text);
+            controle.EditarPessoa(listaDadosPessoa);
             MessageBox.Show(controle.mensagem);
         }
 

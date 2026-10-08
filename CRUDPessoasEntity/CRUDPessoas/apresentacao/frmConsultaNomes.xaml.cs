@@ -1,0 +1,53 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Shapes;
+using CRUDPessoas.modelo;
+
+namespace CRUDPessoas.apresentacao
+{
+    /// <summary>
+    /// Lógica interna para frmConsultaNomes.xaml
+    /// </summary>
+    public partial class frmConsultaNomes : Window
+    {
+        public frmConsultaNomes()
+        {
+            InitializeComponent();
+            // carregar lista no DataGrid
+            dgPessoas.ItemsSource = Estaticos.listaPessoas;
+            dgPessoas.SelectionChanged += DgPessoas_SelectionChanged;
+            btnSelecionar.IsEnabled = false;
+        }
+
+        private void DgPessoas_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            btnSelecionar.IsEnabled = dgPessoas.SelectedItem != null;
+        }
+
+        private void btnSelecionar_Click(object sender, RoutedEventArgs e)
+        {
+            if (dgPessoas.SelectedItem is Pessoa p)
+            {
+                Estaticos.pessoa = p;
+                this.Close();
+            }
+        }
+
+        private void dgPessoas_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            if (dgPessoas.SelectedItem is Pessoa p)
+            {
+                Estaticos.pessoa = p;
+                this.Close();
+            }
+        }
+    }
+}

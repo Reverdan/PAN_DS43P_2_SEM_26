@@ -27,14 +27,12 @@ namespace CRUDPessoas.apresentacao
         private void btnCadastrar_Click(object sender, RoutedEventArgs e)
         {
             Controle controle = new Controle();
-            var dados = new Dictionary<string, string>
-            {
-                ["id"] = "0",
-                ["nome"] = txbNome.Text,
-                ["rg"] = txbRg.Text,
-                ["cpf"] = txbCpf.Text
-            };
-            controle.CadastrarPessoa(dados);
+            List<String> listaDadosPessoa = new List<string>();
+            listaDadosPessoa.Add("0");
+            listaDadosPessoa.Add(txbNome.Text);
+            listaDadosPessoa.Add(txbRg.Text);
+            listaDadosPessoa.Add(txbCpf.Text);
+            controle.CadastrarPessoa(listaDadosPessoa);
             MessageBox.Show(controle.mensagem);
         }
     }

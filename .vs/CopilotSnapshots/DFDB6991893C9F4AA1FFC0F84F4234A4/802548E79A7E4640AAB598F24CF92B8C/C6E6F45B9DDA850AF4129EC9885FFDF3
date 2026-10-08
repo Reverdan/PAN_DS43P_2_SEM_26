@@ -1,0 +1,12 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace CRUDPessoas.modelo
+{
+    public static class Estaticos
+    {
+        public static Pessoa pessoa = new();
+        public static List<Pessoa> listaPessoas = new();
+    }
+}

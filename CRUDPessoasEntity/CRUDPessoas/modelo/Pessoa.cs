@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CRUDPessoas.modelo
 {
-    public class Pessoa
+    public record Pessoa
     {
         public int id { get; set; }
         public string nome { get; set; }

@@ -22,36 +22,31 @@ namespace CRUDPessoas.modelo
             }
         }
 
-        public void ValidarDadosPessoa(Dictionary<string, string> dados)
+        public void ValidarDadosPessoa(List<String> listaDadosPessoa)
         {
             mensagem = "";
 
-            dados.TryGetValue("id", out string idVal);
-            dados.TryGetValue("nome", out string nomeVal);
-            dados.TryGetValue("rg", out string rgVal);
-            dados.TryGetValue("cpf", out string cpfVal);
+            ValidarId(listaDadosPessoa[0]);
 
-            ValidarId(idVal);
-
-            if (string.IsNullOrWhiteSpace(nomeVal))
+            if (string.IsNullOrWhiteSpace(listaDadosPessoa[1]))
             {
                 mensagem += "O nome é obrigatório. \n";
             }
-            else if (nomeVal.Length < 3)
+            else if (listaDadosPessoa[1].Length < 3)
             {
                 mensagem += "O nome deve ter no mínimo 3 caracteres. \n";
             }
-            else if (nomeVal.Length > 50)
+            else if (listaDadosPessoa[1].Length > 50)
             {
                 mensagem += "O nome deve ter no máximo 50 caracteres. ";
             }
 
-            if (!string.IsNullOrEmpty(rgVal) && rgVal.Length > 11)
+            if (!string.IsNullOrEmpty(listaDadosPessoa[2]) && listaDadosPessoa[2].Length > 11)
             {
                 mensagem += "O RG deve ter no máximo 11 caracteres. \n";
             }
 
-            if (!string.IsNullOrEmpty(cpfVal) && cpfVal.Length > 13)
+            if (!string.IsNullOrEmpty(listaDadosPessoa[3]) && listaDadosPessoa[3].Length > 13)
             {
                 mensagem += "O CPF deve ter no máximo 13 caracteres. \n";
             }
